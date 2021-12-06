@@ -175,3 +175,134 @@ header>img{
     color: rgb(132,154,174);
     background-color: rgb(244,247,249);
 }
+
+/* 热门关注 */
+.hot_attention{
+    background-color: white;
+}
+.switch_title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.switch_title .attentionbtn,.switch_title .friendlink{
+    width: 50%;
+    display: inline-block;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgb(255,138,0);
+    border-bottom: 1px solid rgb(255,138,0);
+}
+.switch_title .attentionbtn{
+    border-bottom: 2px solid rgb(255,138,0);
+
+}
+.attention_content,.friendlink_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.attention_content ul li,.friendlink_content ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.friendlink_content{
+    display: none;
+}
+
+/* 页面底部 */
+
+footer{
+    background-color: rgb(47,49,48);
+    color: rgb(147,148,148);
+    padding: 0 2rem 2rem 2rem;
+}
+footer h1{
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(147,148,148); 
+}
+.system_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;margin-bottom: 2rem;
+}
+.ios_icon ,.android_icon{
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+}
+.ios_icon span{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../img/index/apple.png) no-repeat;
+    background-size: contain;
+    margin-right: 2rem;
+}
+.android_icon span{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../img/index/android.png) no-repeat;
+    background-size: contain;
+    margin-right: 2rem;
+}
+footer p{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* APP下载 */
+.app_download{
+    margin: 0;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app_download img{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.app_download span{
+    margin-left: 2.5rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background: url(../img/index/download.png) no-repeat;
+    background-size: contain;
+
+}
+.download_font{
+    color: white;
+}
+.download_font p:nth-of-type(1){
+    font-size: 2rem;
+}
+.download_font p:nth-of-type(2){
+    font-size: 1.5rem;
+}
+.downloadbtn{
+    border: 0;
+    width: 12rem;
+    height: 100%;
+    color: white;
+    background-color:rgb(255,138,0);
+    font-size: 2rem;
+}

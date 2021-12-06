@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>找房无忧-首页</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -101,15 +101,69 @@
             </div>
         </div>
     </section>
+    <section class="hot_attention">
+        <div class="switch_title">
+            <span class="attentionbtn">热门关注</span>
+            <span class="friendlink">友情链接</span>
+        </div>
+        <div class="attention_content">
+            <ul>
+                <li>北京二手房</li>
+                <li>北京二手房价</li>
+                <li>海淀日租房</li>
+                <li>朝阳新房</li>
+            </ul>
+            <ul>
+                <li>北京找房无忧</li>
+                <li>青年家园</li>
+                <li>免税房源</li>
+                <li>满五年唯一免税</li>
+            </ul>
+        </div>
+        <div class="friendlink_content">
+            <ul>
+                <li>安居客</li>
+                <li>我爱我家二手房交易</li>
+                <li>58同城</li>
+                <li>链家二手房</li>
+            </ul>
+            <ul>
+                <li>阿里巴巴</li>
+                <li>贝壳二手房</li>
+                <li>瓜子车二手车</li>
+                <li>赶集网</li>
+            </ul>
+        </div>
+    </section>
+    <section class="app_download">
+        <span></span>
+        <div class="download_font">
+            <p>找房无忧</p>
+            <p>市场行情，一手掌握！</p>
+        </div>
+        <button class="downloadbtn">免费下载</button>
+        <img src="./img/index/close.png" alt="" class="closebtn">
+    </section>
+    <footer>
+        <h1>北京找房无忧>首页</h1>
+        <div class="system_icon">
+            <div class="ios_icon">
+                <span></span>
+                iPhone<br>
+                客户端
+            </div>
+            <div class="android_icon">
+                <span></span>
+                Android<br>
+                客户端
+            </div>
+        </div>
+        <p>北京找房无忧房地产经纪公司</p>
+        <p>网络经营许可证京ICP备20160812号</p>
+    </footer>
 </body>
 
 </html>
-<script>
-    function setRem() {
-        var ui_w = 375;
-        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
-        var html_ = document.getElementsByTagName('html')[0];
-        html_.style.fontSize = (clientWidth / ui_w) * 10 + 'px';
-    }
-    window.onresize = setRem;
-</script>
+<script src="./js/touch.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/setRem.js"></script>
