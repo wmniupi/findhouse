@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(245,245,245);
+}
+section{
+    margin-bottom: 1rem;
+}
+/*头部 */
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(255,138,0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>img{
+    height: 4rem;
+    margin-left: 3rem;
+}
+.header_right{
+    margin-right: 2rem;
+}
+.header_right img{
+    height: 3.5rem;
+    margin: 0 1rem;
+}
+
+/* 页面底部 */
+
+footer{
+    background-color: rgb(47,49,48);
+    color: rgb(147,148,148);
+    padding: 0 2rem 2rem 2rem;
+}
+footer h1{
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(147,148,148); 
+}
+.system_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;margin-bottom: 2rem;
+}
+.ios_icon ,.android_icon{
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+}
+.ios_icon span{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../img/index/apple.png) no-repeat;
+    background-size: contain;
+    margin-right: 2rem;
+}
+.android_icon span{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../img/index/android.png) no-repeat;
+    background-size: contain;
+    margin-right: 2rem;
+}
+footer p{
+    text-align: center;
+    font-size: 1.6rem;
+}

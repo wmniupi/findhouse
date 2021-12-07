@@ -1,0 +1,292 @@
+/* 搜索栏 */
+.search_bar{
+    width: 85%;
+    margin: 1rem auto;
+    position: relative;
+}
+.search_msg{
+    width: 100%;
+    height: 5rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    padding-left: 2rem;
+}
+.searchbtn{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: url(../img/SecondHandList/search_03.png) no-repeat;
+    background-size: contain;
+    background-origin:content-box;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 2px solid rgb(165, 165, 165);
+    padding-left:1.5rem;
+}
+/* 分类列表 */
+.classify_list{
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+}
+.classify_list ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.classify_list ul li{
+    height: 100%;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(116,119,116);
+    position: relative;
+}
+
+.classify_list ul li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 1.6rem;
+    right: -1.5rem;
+    border-top:.5rem solid rgb(116,119,116);
+    border-left:.5rem solid transparent;
+    border-right:.5rem solid transparent;
+    border-bottom:.5rem solid transparent;
+}
+
+/* 房源列表 */
+.resale_house_list{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list_element{
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid orangered;
+}
+.list_element:nth-of-type(1){
+    border-top: 0;
+}
+.list_element img{
+    width: 30%;
+}
+.desc_part{
+    width: 60%;
+    height: 80%;
+}
+.desc_part h1{
+    font-size: 1.8rem;
+}
+.desc_part p:nth-of-type(1){
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: black;
+}
+.desc_part p:nth-of-type(2) strong{
+    color: rgb(255,138,0);
+}
+.desc_part p:nth-of-type(2){
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: rgb(176,176,182);
+}
+.desc_part p:nth-of-type(3){
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: rgb(176,176,182);
+}
+/* 列表蒙版 */
+.mask{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.rest{
+    flex: 1;
+}
+.mask_title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(102,102,102);
+}
+.area,.price,.type,.more{
+    position: relative;
+}
+.title_element::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 1rem;
+    right: -1.5rem;
+    border-top:.5rem solid rgb(116,119,116);
+    border-left:.5rem solid transparent;
+    border-right:.5rem solid transparent;
+    border-bottom:.5rem solid transparent;
+}
+
+.mask_content {
+    background-color: white;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.area_content{
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+.area_content .left{
+    width:25%;
+    background-color: rgb(240,240,240);
+}
+.area_content .left li{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem;
+}
+.area_content .left li:nth-of-type(1){
+    background-color: white;
+    color: rgb(255,138,0);
+}
+.area_content .right{
+    width:75%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.area_content .right li{
+    list-style: none;
+    font-size: 1.6rem;
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(92, 92, 92);
+}
+.price_content{
+    display: none;
+}
+.price_content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.price_content ul li{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 1rem 2rem;
+    padding-bottom: 1rem;
+    color: rgb(92, 92, 92);
+    border-bottom: 1px solid rgb(92, 92, 92);
+}
+.price_content ul li:nth-of-type(7){
+    border:0;
+}
+
+.type_content{
+    display: none;
+}
+.type_content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.type_content ul li{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 1rem 2rem;
+    padding-bottom: 1rem;
+    color: rgb(92, 92, 92);
+    border-bottom: 1px solid rgb(143, 143, 143);
+}
+.type_content ul li:nth-of-type(6){
+    border:0;
+}
+.type_content ul li:nth-of-type(7){
+    border:0;
+}
+
+.type_content ul li input{
+    width: 1.5rem;
+    height: 1.5rem;
+    float: right;
+    margin-right: 1rem;
+    border: 0;
+
+}
+.type_content ul li button{
+    width: 100%;
+    height: 5rem;
+    border: 0;
+    background-color: rgb(255,138,0);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.more_content{
+    display: none;
+    padding: 0 2rem;
+}
+.more_content dl{
+    padding: 2rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.more_content dl dt{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.more_content dl dd {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.more_content dl dd span{
+    display: inline-block;
+    width: 20%;
+    height: 2.8rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+    border:1px solid #ccc;
+    margin: 1rem 0;
+}

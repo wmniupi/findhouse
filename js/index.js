@@ -5,14 +5,14 @@ window.addEventListener('load', function () {
     let friendlink_content = document.querySelector('.friendlink_content');
     let app_download = document.querySelector('.app_download');
     let closebtn = document.querySelector(".closebtn");
-    touch.on(attentionbtn, 'tap', function () {
+    touch.on(attentionbtn, 'touchstart', function () {
         friendlink.style.borderBottom = '1px solid rgb(255,138,0)';
         this.style.borderBottom = '2px solid rgb(255,138,0)';
         friendlink_content.style.display = 'none';
         attention_content.style.display = 'flex';
 
     });
-    touch.on(friendlink, 'tap', function () {
+    touch.on(friendlink, 'touchstart', function () {
         attentionbtn.style.borderBottom = '1px solid rgb(255,138,0)';
         this.style.borderBottom = '2px solid rgb(255,138,0)';
         attention_content.style.display = 'none';
