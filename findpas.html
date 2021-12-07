@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>findpas</title>
+    <link rel="stylesheet" href="./css/findpas.css">
+    <script src="./js/setRem.js"></script>
+    <script src="./js/findpas.js"></script>
+</head>
+<!-- 找回密码界面 -->
+
+<body>
+    <div class="box">
+        <header>
+            <img src="./img/index/logo.jpg" alt="">
+            <div class="header_right">
+                <img src="./img/index/my.jpg" alt="" id="mine_i">
+                <img src="./img/index/xiazai.jpg" alt="">
+            </div>
+        </header>
+        <nav>
+            <span>
+                首页
+            </span>
+            >
+            <span>
+                找回密码
+            </span>
+        </nav>
+        <aside>
+            <input type="text" placeholder="请输入手机号码" id="phonenum">
+            <input type="text" placeholder="请输入短信中的验证码" id="code">
+            <input type="password" placeholder="请输入新密码" id="paw">
+            <input type="password" placeholder="请输入确认密码" id="n_paw">
+            <button class="authcode">
+                发送验证码
+            </button>
+        </aside>
+        <article>
+            <button id="sub">提交</button>
+        </article>
+    </div>
+</body>
+
+</html>
+<script>
+    var mine_i = document.getElementById('mine_i');
+    mine_i.addEventListener('click',function(){
+         window.location='./usermine.html'
+    })
+</script>
