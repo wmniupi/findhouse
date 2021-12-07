@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +41,8 @@ header>img {
     margin: 0 1rem;
 }
 
+=======
+>>>>>>> 9ca421af93015607ffecbc6fe4645fd9b2bc2ca0
 /* 页面顶部焦点图 */
 .banner {
     width: 100%;
@@ -142,6 +145,7 @@ header>img {
     align-items: center;
     background-color: white;
 }
+<<<<<<< HEAD
 
 .house_list hr {
     width: 90%;
@@ -154,10 +158,20 @@ header>img {
     width: 100%;
     height: 15rem;
     margin: 1rem 0;
+=======
+>>>>>>> 9ca421af93015607ffecbc6fe4645fd9b2bc2ca0
 
+.house_list_element{
+    width: 95%;
+    height: 15rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-top: 1px solid orangered;
+}
+.house_list_element:nth-of-type(1){
+    border-top: 0;
 }
 
 .house_list_element img {
@@ -196,6 +210,97 @@ header>img {
 .desc_part span {
     padding: .3rem;
     font-size: 1.5rem;
+<<<<<<< HEAD
     color: rgb(132, 154, 174);
     background-color: rgb(244, 247, 249);
+=======
+    color: rgb(132,154,174);
+    background-color: rgb(244,247,249);
+}
+
+/* 热门关注 */
+.hot_attention{
+    background-color: white;
+}
+.switch_title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.switch_title .attentionbtn,.switch_title .friendlink{
+    width: 50%;
+    display: inline-block;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgb(255,138,0);
+    border-bottom: 1px solid rgb(255,138,0);
+}
+.switch_title .attentionbtn{
+    border-bottom: 2px solid rgb(255,138,0);
+
+}
+.attention_content,.friendlink_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.attention_content ul li,.friendlink_content ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.friendlink_content{
+    display: none;
+}
+
+
+
+/* APP下载 */
+.app_download{
+    margin: 0;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app_download img{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.app_download span{
+    margin-left: 2.5rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background: url(../img/index/download.png) no-repeat;
+    background-size: contain;
+
+}
+.download_font{
+    color: white;
+}
+.download_font p:nth-of-type(1){
+    font-size: 2rem;
+}
+.download_font p:nth-of-type(2){
+    font-size: 1.5rem;
+}
+.downloadbtn{
+    border: 0;
+    width: 12rem;
+    height: 100%;
+    color: white;
+    background-color:rgb(255,138,0);
+    font-size: 2rem;
+>>>>>>> 9ca421af93015607ffecbc6fe4645fd9b2bc2ca0
 }

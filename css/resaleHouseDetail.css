@@ -1,0 +1,122 @@
+section{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+
+}
+.scroll_sec{
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+.scrollimg_container{
+    width: 100%;
+    height: 22rem;
+    overflow: hidden;
+    position: relative;
+}
+.scrollimg_thing {
+    width: 600%;
+    height: 100%;
+    position: absolute;
+}
+.scrollimg_thing li{
+    height: 22rem;
+    list-style: none;
+    float: left;
+}
+.scrollimg_thing li img{
+    width: 37.5rem;
+    height: 100%;
+}
+
+.leftarrow {
+    display: none;
+    background-image: url(../img/SecondHandList/prev.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 5rem;
+    position: absolute;
+    left: 1rem;
+    top: 7.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.rightarrow {
+    display: none;
+    background-image: url(../img/SecondHandList/next.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 5rem;
+    position: absolute;
+    right: 1rem;
+    top: 7.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sorter{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 5rem;
+    height: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.desc_part1{
+    background-color: white;
+    padding: 3rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+.desc_part1 h1{
+    font-size: 2rem;
+}
+.desc_part1 font{
+    margin: 1rem 0;
+    color: red;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.desc_part1 p{
+    color: rgb(163, 163, 163);
+}
+.desc_part1 span:nth-of-type(1){
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    float: right;
+    background: url(../img/SecondHandList/phone.png) no-repeat;
+    background-size: contain;
+}
+.desc_part1 span:nth-of-type(2){
+    display: inline-block;
+    padding: 0 .5rem;
+    background-color: rgb(222,233,240);
+    color: rgb(132,154,174);
+    margin-right: .5rem;
+}
+.desc_part1 span:nth-of-type(3){
+    display: inline-block;
+    padding: 0 .5rem;
+    background-color: rgb(222,233,240);
+    color: rgb(132,154,174);
+    margin-right: .5rem;
+}
+.desc_part1 span:nth-of-type(4){
+    display: inline-block;
+    padding: 0 .5rem;
+    background-color: rgb(222,233,240);
+    color: rgb(132,154,174);
+    margin-right: .5rem;
+    margin-top: 1rem;
+}
