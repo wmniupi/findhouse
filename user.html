@@ -14,10 +14,10 @@
     <div class="box">
         <article>
             <!-- 头部改为article -->
-                <span id="mine_i">
+                <span>
                     <img src="./img/index/my.jpg" alt="">
                 </span>
-                <span>
+                <span id="download">
                     <img src="./img/index/xiazai.jpg" alt="">
                 </span>
         </article>
@@ -70,5 +70,9 @@
             alert('您还未登录，请先登录')
         }
     }
+    var download =document.getElementById('download');
+    download.addEventListener('click',function(){
+        alert('APP尚在研发中')
+    })
     })
 </script>

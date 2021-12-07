@@ -16,11 +16,11 @@
         <img src="./img/index/logo.jpg" alt="">
         <div class="header_right">
             <img src="./img/index/my.jpg" alt="" id="mine_i">
-            <img src="./img/index/xiazai.jpg" alt="">
+            <img src="./img/index/xiazai.jpg" alt="" id="download">
         </div>
         </header>
         <nav>
-            <span>
+            <span id="index_">
                 首页
             </span>
             >
@@ -91,5 +91,13 @@
         }else{
             alert('您还未登录，请先登录')
         }
+    })
+    var download =document.getElementById('download');
+    download.addEventListener('click',function(){
+        alert('APP尚在研发中')
+    })
+     var index_ =document.getElementById('index_');
+    index_.addEventListener('click',function(){
+        window.location='./index.html'
     })
 </script>
