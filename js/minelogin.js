@@ -38,10 +38,11 @@ window.addEventListener('load',function(){
 		 if (!reg_tel.test(phonenum.value )) {
             phonenum.value ='';
 			phonenum.placeholder='手机号输错了!!!';
-             phonenum.style.boxShadow='0 0 8px rgb(255,138,0) inset'
+            phonenum.style.boxShadow='0 0 8px rgb(255,138,0) inset'
             a1=false;
 		}else{
             a1=true;
+            phonenum.style.boxShadow='0 0 8px green inset'
         }
     }
     code.onblur=function(){
@@ -52,6 +53,7 @@ window.addEventListener('load',function(){
              a2=false;
         }else{
             a2=true;
+            code.style.boxShadow='0 0 8px green inset'
         }
     }
      paw.onblur=function(){
@@ -62,11 +64,13 @@ window.addEventListener('load',function(){
              a3=false;
         }else{
             a3=true;
+            copawde.style.boxShadow='0 0 8px green inset'
         }
     }
     sub.onclick=function(){
         if(a1 && a2 && a3){
             alert('注册成功')
+             localStorage.setItem('phone_value',phonenum.value);
              window.location='./usermine.html';
              phonenum.value='';
              code.value='';

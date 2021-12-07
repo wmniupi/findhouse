@@ -74,7 +74,21 @@ window.addEventListener('load', function () {
     })
     for (let ele of list_elements) {
         touch.on(ele, 'touchstart', function () {
-            window.location.href = './index.html';
+            window.location.href = './rentinghouseDetail.html';
         })
     }
+
+    let search_msg = document.querySelector('.search_msg');
+    let searchbtn = document.querySelector('.searchbtn');
+
+    function search() {
+        window.location.href = './rentinghouse.html';
+    }
+    touch.on(searchbtn, 'tap', search)
+    search_msg.addEventListener('keydown', function (e) {
+        if (e.key == 'Enter') {
+            window.location.href = './rentinghouse.html';
+        }
+    })
+
 })

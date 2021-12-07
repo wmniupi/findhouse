@@ -115,7 +115,7 @@ window.addEventListener('load',function(){
     sub2.onclick=function(){
         if(a4 && a3){
             alert('登录成功')
-             localStorage.setItem('phone_value',phonenum.value);
+             localStorage.setItem('phone_value',phonenum2.value);
              window.location='./usermine.html';
             phonenum2.value='';
              paw2.value='';
