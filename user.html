@@ -10,16 +10,17 @@
     <script src="./js/setRem.js"></script>
 </head>
 <!-- 首页 -->
+
 <body>
     <div class="box">
         <article>
             <!-- 头部改为article -->
-                <span id="mine_i">
-                    <img src="./img/index/my.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./img/index/xiazai.jpg" alt="">
-                </span>
+            <span id="mine_i">
+                <img src="./img/index/my.jpg" alt="">
+            </span>
+            <span>
+                <img src="./img/index/xiazai.jpg" alt="">
+            </span>
         </article>
         <nav>
             <p>
@@ -36,7 +37,7 @@
                     <span>我关注的房源</span>
                     <span><img src="./img/my/right.png" alt=""></span>
                 </li>
-                <li >
+                <li>
                     <span><img src="./img/my/icon2.png" alt=""></span>
                     <span>我关注的小区</span>
                     <span><img src="./img/my/right.png" alt=""></span>
@@ -58,17 +59,17 @@
 
 </html>
 <script>
-    window.addEventListener('load',function(){
+    window.addEventListener('load', function () {
         var login = document.getElementById('login');
-        login.addEventListener('touchstart',function(){
-        window.location='./userlogin.html';
-    })
-    var aside = document.getElementsByTagName('aside')[0];
-    var lis = aside.getElementsByTagName('li');
-    for(var i =0;i<lis.length;i++){
-        lis[i].onclick=function(){
-            alert('您还未登录，请先登录')
+        login.addEventListener('touchstart', function () {
+            window.location = './userlogin.html';
+        })
+        var aside = document.getElementsByTagName('aside')[0];
+        var lis = aside.getElementsByTagName('li');
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].onclick = function () {
+                alert('您还未登录，请先登录')
+            }
         }
-    }
     })
 </script>

@@ -77,4 +77,18 @@ window.addEventListener('load', function () {
             window.location.href = './resaleHouseDetail.html';
         })
     }
+
+    let search_msg = document.querySelector('.search_msg');
+    let searchbtn = document.querySelector('.searchbtn');
+
+    function search() {
+        window.location.href = './resaleHouse.html';
+    }
+    touch.on(searchbtn, 'tap', search)
+    search_msg.addEventListener('keydown', function (e) {
+        if (e.key == 'Enter') {
+            window.location.href = './resaleHouse.html';
+        }
+    })
+
 })

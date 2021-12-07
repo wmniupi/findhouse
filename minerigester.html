@@ -10,16 +10,17 @@
     <script src="./js/setRem.js"></script>
 </head>
 <!-- 注册界面 -->
+
 <body>
     <div class="box">
         <header>
-        <img src="./img/index/logo.jpg" alt="">
-        <div class="header_right">
-            <img src="./img/index/my.jpg" alt="" id="mine_i">
-            <img src="./img/index/xiazai.jpg" alt="">
-        </div>
-</header>
- <nav>
+            <img src="./img/index/logo.jpg" alt="">
+            <div class="header_right">
+                <img src="./img/index/my.jpg" alt="" id="mine_i">
+                <img src="./img/index/xiazai.jpg" alt="">
+            </div>
+        </header>
+        <nav>
             <span>
                 首页
             </span>
@@ -33,7 +34,7 @@
             </span>
         </nav>
         <aside>
-           <input type="text" placeholder="请输入手机号码" id="phonenum">
+            <input type="text" placeholder="请输入手机号码" id="phonenum">
             <input type="text" placeholder="请输入短信中的验证码" id="code">
             <input type="password" placeholder="请输入新密码" id="paw">
             <button class="authcode">
@@ -50,19 +51,22 @@
 <script src="./js/minelogin.js"></script>
 <script>
     var mine_ = document.getElementById('mine_');
-    mine_.addEventListener('click',function(){
-        if(localStorage.getItem('phone_value')){
-            window.location='./usermine.html'
-        }else{
+    mine_.addEventListener('click', function () {
+        if (localStorage.getItem('phone_value')) {
+            window.location = './usermine.html'
+        } else {
             alert('您还未登录，请先登录')
         }
     })
     var mine_i = document.getElementById('mine_i');
-    mine_i.addEventListener('click',function(){
-        if(localStorage.getItem('phone_value')){
-            window.location='./usermine.html'
-        }else{
+    mine_i.addEventListener('click', function () {
+        if (localStorage.getItem('phone_value')) {
+            window.location = './usermine.html'
+        } else {
             alert('您还未登录，请先登录')
         }
     })
 </script>
+<script src="./js/touch.min.js"></script>
+
+<script src="./js/header&footer.js"></script>
