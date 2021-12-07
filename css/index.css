@@ -1,47 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-body{
-    background-color: rgb(245,245,245);
+
+body {
+    background-color: rgb(245, 245, 245);
 }
-section{
+
+section {
     margin-bottom: 1rem;
 }
+
 /*头部 */
-header{
+header {
     width: 100%;
     height: 5rem;
-    background-color: rgb(255,138,0);
+    background-color: rgb(255, 138, 0);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header>img{
+
+header>img {
     height: 4rem;
     margin-left: 3rem;
 }
-.header_right{
+
+.header_right {
     margin-right: 2rem;
 }
-.header_right img{
+
+.header_right img {
     height: 3.5rem;
     margin: 0 1rem;
 }
 
 /* 页面顶部焦点图 */
-.banner{
+.banner {
     width: 100%;
     height: 26rem;
     background: url(../img/index/banner.png) no-repeat;
     background-size: cover;
     position: relative;
 }
-.search_box{
+
+.search_box {
     position: absolute;
     width: 75%;
     height: 4rem;
@@ -50,7 +58,8 @@ header>img{
     transform: translateX(-50%);
 
 }
-.search_bar{
+
+.search_bar {
     width: 100%;
     height: 100%;
     border: 0;
@@ -58,7 +67,8 @@ header>img{
     box-sizing: border-box;
     padding-left: 5rem;
 }
-.search_logo{
+
+.search_logo {
     position: absolute;
     display: block;
     width: 2.5rem;
@@ -73,15 +83,16 @@ header>img{
 
 /* 图标菜单 */
 
-.icon_menu{
-    background-color: rgb(255,138,0);
+.icon_menu {
+    background-color: rgb(255, 138, 0);
     width: 100%;
     height: 14rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.menu_element{
+
+.menu_element {
     width: 20%;
     color: white;
     font-size: 1.7rem;
@@ -91,13 +102,13 @@ header>img{
     align-items: center;
 }
 
-.menu_element img{
+.menu_element img {
     width: 100%;
 }
 
 /* 展示图片 */
 
-.show_img{
+.show_img {
     background: url(../img/index/banner2.png) no-repeat;
     background-size: cover;
     width: 100%;
@@ -106,35 +117,40 @@ header>img{
 
 /* 热门房源 */
 
-.hot_house{
+.hot_house {
     width: 100%;
 }
 
-.title{
+.title {
     padding: 2rem;
     color: white;
-    background-color: rgb(255,138,0);
+    background-color: rgb(255, 138, 0);
 }
-.title h2{
+
+.title h2 {
     font-size: 2rem;
 }
-.title p{
+
+.title p {
     font-weight: 600;
 }
-.house_list{
+
+.house_list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: white;
 }
-.house_list hr{
+
+.house_list hr {
     width: 90%;
     height: 1px;
     background-color: orangered;
     border: none;
 }
-.house_list_element{
+
+.house_list_element {
     width: 100%;
     height: 15rem;
     margin: 1rem 0;
@@ -143,35 +159,43 @@ header>img{
     justify-content: space-evenly;
     align-items: center;
 }
-.house_list_element img{
+
+.house_list_element img {
     width: 30%;
 }
-.desc_part{
+
+.desc_part {
     width: 60%;
     height: 80%;
 }
-.desc_part h1{
+
+.desc_part h1 {
     font-size: 2.1rem;
 }
-.desc_part p:nth-of-type(1){
+
+.desc_part p:nth-of-type(1) {
     font-size: 1.5rem;
     margin: 1rem 0;
 }
-.desc_part p:nth-of-type(1) strong{
-    color: rgb(255,138,0);
+
+.desc_part p:nth-of-type(1) strong {
+    color: rgb(255, 138, 0);
     float: right;
 }
-.desc_part p:nth-of-type(2){
+
+.desc_part p:nth-of-type(2) {
     font-size: 1.5rem;
     margin: 1rem 0;
     color: rgb(204, 204, 204);
 }
-.desc_part p:nth-of-type(2) font{
+
+.desc_part p:nth-of-type(2) font {
     float: right;
 }
-.desc_part span{
+
+.desc_part span {
     padding: .3rem;
     font-size: 1.5rem;
-    color: rgb(132,154,174);
-    background-color: rgb(244,247,249);
+    color: rgb(132, 154, 174);
+    background-color: rgb(244, 247, 249);
 }

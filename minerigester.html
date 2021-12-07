@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>minelogin</title>
+    <link rel="stylesheet" href="./css/minelogin.css">
+    <script src="./js/setRem.js"></script>
+</head>
+<!-- 注册界面 -->
+<body>
+    <div class="box">
+        <header>
+        <img src="./img/index/logo.jpg" alt="">
+        <div class="header_right">
+            <img src="./img/index/my.jpg" alt="" id="mine_i">
+            <img src="./img/index/xiazai.jpg" alt="">
+        </div>
+</header>
+ <nav>
+            <span>
+                首页
+            </span>
+            >
+            <span id="mine_">
+                我的
+            </span>
+            >
+            <span>
+                注册
+            </span>
+        </nav>
+        <aside>
+           <input type="text" placeholder="请输入手机号码" id="phonenum">
+            <input type="text" placeholder="请输入短信中的验证码" id="code">
+            <input type="password" placeholder="请输入新密码" id="paw">
+            <button class="authcode">
+                发送验证码
+            </button>
+        </aside>
+        <article>
+            <button id="sub">立即注册</button>
+        </article>
+    </div>
+</body>
+
+</html>
+<script src="./js/minelogin.js"></script>
+<script>
+    var mine_ = document.getElementById('mine_');
+    mine_.addEventListener('click',function(){
+        if(localStorage.getItem('phone_value')){
+            window.location='./usermine.html'
+        }else{
+            alert('您还未登录，请先登录')
+        }
+    })
+    var mine_i = document.getElementById('mine_i');
+    mine_i.addEventListener('click',function(){
+        if(localStorage.getItem('phone_value')){
+            window.location='./usermine.html'
+        }else{
+            alert('您还未登录，请先登录')
+        }
+    })
+</script>

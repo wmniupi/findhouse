@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>user</title>
+    <link rel="stylesheet" href="./css/user.css">
+    <script src="./js/setRem.js"></script>
+</head>
+<!-- 首页 -->
+<body>
+    <div class="box">
+        <article>
+            <!-- 头部改为article -->
+                <span id="mine_i">
+                    <img src="./img/index/my.jpg" alt="">
+                </span>
+                <span>
+                    <img src="./img/index/xiazai.jpg" alt="">
+                </span>
+        </article>
+        <nav>
+            <p>
+                <img src="./img/my/urse2.png" alt="">
+            </p>
+            <button id="login">
+                登录
+            </button>
+        </nav>
+        <aside>
+            <ul>
+                <li>
+                    <span><img src="./img/my/icon1.png" alt=""></span>
+                    <span>我关注的房源</span>
+                    <span><img src="./img/my/right.png" alt=""></span>
+                </li>
+                <li >
+                    <span><img src="./img/my/icon2.png" alt=""></span>
+                    <span>我关注的小区</span>
+                    <span><img src="./img/my/right.png" alt=""></span>
+                </li>
+                <li>
+                    <span><img src="./img/my/icon3.png" alt=""></span>
+                    <span>我关注的新房</span>
+                    <span><img src="./img/my/right.png" alt=""></span>
+                </li>
+                <li>
+                    <span><img src="./img/my/icon4.png" alt=""></span>
+                    <span>我的看房记录</span>
+                    <span><img src="./img/my/right.png" alt=""></span>
+                </li>
+            </ul>
+        </aside>
+    </div>
+</body>
+
+</html>
+<script>
+    window.addEventListener('load',function(){
+        var login = document.getElementById('login');
+        login.addEventListener('touchstart',function(){
+        window.location='./userlogin.html';
+    })
+    var aside = document.getElementsByTagName('aside')[0];
+    var lis = aside.getElementsByTagName('li');
+    for(var i =0;i<lis.length;i++){
+        lis[i].onclick=function(){
+            alert('您还未登录，请先登录')
+        }
+    }
+    })
+</script>
