@@ -74,7 +74,7 @@ window.addEventListener('load', function () {
     })
     for (let ele of list_elements) {
         touch.on(ele, 'touchstart', function () {
-            window.location.href = './resaleHouseDetail.html';
+            window.location.href = './index.html';
         })
     }
 })
