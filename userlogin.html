@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="./css/userregister.css">
     <script src="./js/setRem.js"></script>
 </head>
-    <!-- 登陆界面 -->
+<!-- 登陆界面 -->
+
 <body>
-     <div class="box">
-         <header>
-        <img src="./img/index/logo.jpg" alt="">
-        <div class="header_right">
-            <img src="./img/index/my.jpg" alt="" id="mine_i">
-            <img src="./img/index/xiazai.jpg" alt="" id="download">
-        </div>
+    <div class="box">
+        <header>
+            <img src="./img/index/logo.jpg" alt="">
+            <div class="header_right">
+                <img src="./img/index/my.jpg" alt="" id="mine_i">
+                <img src="./img/index/xiazai.jpg" alt="">
+            </div>
         </header>
         <nav>
             <span id="index_">
@@ -42,62 +43,53 @@
         </aside>
         <article class="common">
             <input type="text" placeholder="请输入手机号码" id="phonenum">
-             <input type="password" placeholder="请输入密码" id="paw">
-              <footer>
-            <button id="sub">立即登录</button>
-            <p>
-                <a href="./minerigester.html" class="reg">立即注册</a>
-                <a href="./findpas.html" >忘记密码</a>
-            </p>
-        </footer>
+            <input type="password" placeholder="请输入密码" id="paw">
+            <footer>
+                <button id="sub">立即登录</button>
+                <p>
+                    <a href="./minerigester.html" class="reg">立即注册</a>
+                    <a href="./findpas.html">忘记密码</a>
+                </p>
+            </footer>
         </article>
 
         <!-- 第二个 -->
 
         <article class="fast">
             <input type="text" placeholder="请输入手机号码" id="phonenum2">
-             <input type="text" placeholder="请输入短信中的验证码" id="paw2">
-             <button class="authcode">
-                 发送验证码
-             </button>
-              <footer>
-            <button id="sub2">验证并登录</button>
-            <p>
-                <a href="./minerigester.html" class="reg">立即注册</a>
-                <a href="./findpas.html" >忘记密码</a>
-            </p>
-        </footer>
+            <input type="text" placeholder="请输入短信中的验证码" id="paw2">
+            <button class="authcode">
+                发送验证码
+            </button>
+            <footer>
+                <button id="sub2">验证并登录</button>
+                <p>
+                    <a href="./minerigester.html" class="reg">立即注册</a>
+                    <a href="./findpas.html">忘记密码</a>
+                </p>
+            </footer>
         </article>
-        </div>
+    </div>
 </body>
 
 </html>
 <script src="./js/userregister.js">
-    
+
 </script>
 <script>
     var mine_ = document.getElementById('mine_');
-    mine_.addEventListener('click',function(){
-        if(localStorage.getItem('phone_value')){
-            window.location='./usermine.html'
-        }else{
+    mine_.addEventListener('click', function () {
+        if (localStorage.getItem('phone_value')) {
+            window.location = './usermine.html'
+        } else {
             alert('您还未登录，请先登录')
         }
     })
-    var mine_i = document.getElementById('mine_i');
-    mine_i.addEventListener('click',function(){
-        if(localStorage.getItem('phone_value')){
-            window.location='./usermine.html'
-        }else{
-            alert('您还未登录，请先登录')
-        }
-    })
-    var download =document.getElementById('download');
-    download.addEventListener('click',function(){
-        alert('APP尚在研发中')
-    })
-     var index_ =document.getElementById('index_');
-    index_.addEventListener('click',function(){
-        window.location='./index.html'
+   var index_ = document.getElementById('index_');
+    index_.addEventListener('click', function () {
+        window.location = './index.html'
     })
 </script>
+<script src="./js/touch.min.js"></script>
+
+<script src="./js/header&footer.js"></script>

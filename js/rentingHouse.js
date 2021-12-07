@@ -74,7 +74,7 @@ window.addEventListener('load', function () {
     })
     for (let ele of list_elements) {
         touch.on(ele, 'touchstart', function () {
-            window.location.href = './resaleHouseDetail.html';
+            window.location.href = './rentinghouseDetail.html';
         })
     }
 
@@ -82,12 +82,12 @@ window.addEventListener('load', function () {
     let searchbtn = document.querySelector('.searchbtn');
 
     function search() {
-        window.location.href = './resaleHouse.html';
+        window.location.href = './rentinghouse.html';
     }
     touch.on(searchbtn, 'tap', search)
     search_msg.addEventListener('keydown', function (e) {
         if (e.key == 'Enter') {
-            window.location.href = './resaleHouse.html';
+            window.location.href = './rentinghouse.html';
         }
     })
 

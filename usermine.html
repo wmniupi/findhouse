@@ -10,14 +10,15 @@
     <script src="./js/setRem.js"></script>
 </head>
 <!-- 首页我的 -->
+
 <body>
     <div class="box">
-         <header>
-        <img src="./img/index/logo.jpg" alt="">
-        <div class="header_right">
-            <img src="./img/index/my.jpg" alt="">
-            <img src="./img/index/xiazai.jpg" alt="" id="download">
-        </div>
+        <header>
+            <img src="./img/index/logo.jpg" alt="">
+            <div class="header_right">
+                <img src="./img/index/my.jpg" alt="">
+                <img src="./img/index/xiazai.jpg" alt="">
+            </div>
         </header>
         <nav>
             <span id="index_">
@@ -34,7 +35,7 @@
             </p>
             <span>欢迎你，
                 <i id="phonenub">
-                18686868686
+                    18686868686
                 </i>
             </span>
         </aside>
@@ -59,25 +60,24 @@
         </footer>
     </div>
 </body>
+
 </html>
 <script>
     var attention = document.getElementById('attention');
-    attention.addEventListener('click',function(){
-        window.location='./attentionhouse.html'
+    attention.addEventListener('click', function () {
+        window.location = './attentionhouse.html'
     })
     var phonenub = document.getElementById('phonenub');
-    phonenub.innerHTML=localStorage.getItem('phone_value')
-    var quit=document.getElementById('quit');
-    quit.addEventListener('click',function(){
+    phonenub.innerHTML = localStorage.getItem('phone_value')
+    var quit = document.getElementById('quit');
+    quit.addEventListener('click', function () {
         localStorage.removeItem('phone_value')
-        window.location='./user.html'
+        window.location = './user.html'
     })
-    var download =document.getElementById('download');
-    download.addEventListener('click',function(){
-        alert('APP尚在研发中')
-    })
-     var index_ =document.getElementById('index_');
-    index_.addEventListener('click',function(){
-        window.location='./index.html'
+    var index_ = document.getElementById('index_');
+    index_.addEventListener('click', function () {
+        window.location = './index.html'
     })
 </script>
+<script src="./js/touch.min.js"></script>
+<script src="./js/header&footer.js"></script>
