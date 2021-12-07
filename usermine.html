@@ -69,6 +69,7 @@
     phonenub.innerHTML=localStorage.getItem('phone_value')
     var quit=document.getElementById('quit');
     quit.addEventListener('click',function(){
+        localStorage.removeItem('phone_value')
         window.location='./user.html'
     })
 </script>
